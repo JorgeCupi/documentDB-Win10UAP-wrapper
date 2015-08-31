@@ -113,6 +113,7 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocumentDB\Classes.cs" />
     <Compile Include="DocumentDB\Authenticate.cs" />
     <Compile Include="DocumentDB\Utilities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

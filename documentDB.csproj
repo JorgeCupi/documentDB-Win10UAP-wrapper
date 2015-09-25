@@ -32,7 +32,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Authenticate.cs" />
-    <Compile Include="Classes.cs" />
     <Compile Include="CRUD.cs" />
     <Compile Include="Utilities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

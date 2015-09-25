@@ -1,6 +1,0 @@
-E:\Dev\Projects\Xamarin\IoTChallenge\documentDB\bin\Debug\documentDB.dll
-E:\Dev\Projects\Xamarin\IoTChallenge\documentDB\bin\Debug\documentDB.pdb
-E:\Dev\Projects\Xamarin\IoTChallenge\documentDB\bin\Debug\Newtonsoft.Json.dll
-E:\Dev\Projects\Xamarin\IoTChallenge\documentDB\bin\Debug\Newtonsoft.Json.xml
-E:\Dev\Projects\Xamarin\IoTChallenge\documentDB\obj\Debug\documentDB.dll
-E:\Dev\Projects\Xamarin\IoTChallenge\documentDB\obj\Debug\documentDB.pdb

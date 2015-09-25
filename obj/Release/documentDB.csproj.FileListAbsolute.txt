@@ -1,0 +1,6 @@
+E:\Dev\Projects\Xamarin\IoTChallenge\documentDB\bin\Release\documentDB.dll
+E:\Dev\Projects\Xamarin\IoTChallenge\documentDB\bin\Release\documentDB.pdb
+E:\Dev\Projects\Xamarin\IoTChallenge\documentDB\bin\Release\Newtonsoft.Json.dll
+E:\Dev\Projects\Xamarin\IoTChallenge\documentDB\bin\Release\Newtonsoft.Json.xml
+E:\Dev\Projects\Xamarin\IoTChallenge\documentDB\obj\Release\documentDB.dll
+E:\Dev\Projects\Xamarin\IoTChallenge\documentDB\obj\Release\documentDB.pdb

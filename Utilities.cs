@@ -16,11 +16,11 @@ namespace documentDB
             return stringContent;
         }
 
-        private async static Task<HttpClient> GetClient(string verb, string accountID, string mainID)
+        private async static Task<HttpClient> GetClient(string verb, string accountID, string documentID)
         {
             HttpClient client = new HttpClient();
             string date = DateTime.UtcNow.ToString("R", CultureInfo.InvariantCulture);
-            string authHeader = await Authenticate.GetAuthorizationHeader(verb, date, mainID);
+            string authHeader = await Authenticate.GetAuthorizationHeader(verb, date, documentID);
             client.DefaultRequestHeaders.Add("authorization", authHeader);
             client.DefaultRequestHeaders.Add("x-ms-date", date);
             client.DefaultRequestHeaders.Add("Accept", "application/json");

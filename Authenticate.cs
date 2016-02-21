@@ -9,7 +9,7 @@ namespace documentDB
 
         internal static async Task<string> GetAuthorizationHeader(string httpRequest, string date, string docID)
         {
-            string nodejsAuth = "http://nodejsauth.azurewebsites.net/documentDBAuth/{0}/{1}/{2}";
+            string nodejsAuth = "http://nodejazureauth.azurewebsites.net/documentDBAuth/{0}/{1}/{2}";
             switch (httpRequest)
             {
                 case "get":

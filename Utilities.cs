@@ -27,7 +27,22 @@ namespace documentDB
             client.DefaultRequestHeaders.Add("Host", String.Format("{0}.documents.azure.com", accountID));
             client.DefaultRequestHeaders.Add("x-ms-consistency-level", "Session");
             client.DefaultRequestHeaders.Add("x-ms-version", "2015-04-08");
+
+            if(verb =="post")
+            {
+                client.DefaultRequestHeaders.Add("x-ms-documentdb-isquery","true");
+                client.DefaultRequestHeaders.Add("Content-Type", "application/query+json");
+                return client;
+            }
             return client;
+        }
+
+        private static string GenericQueryToJson(string parameter, string value)
+        {
+            string json = "{query: \"{0}\" , parameters:[]";
+            string formatedQuery = "SELECT * FROM root WHERE (root.{0}= '{1}')";
+            formatedQuery = String.Format(formatedQuery, parameter, value);
+            return string.Format(json,formatedQuery);
         }
     }
 }

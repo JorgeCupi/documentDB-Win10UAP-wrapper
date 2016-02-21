@@ -32,6 +32,23 @@ namespace documentDB
             catch (Exception ex) { return ex.Message; }
         }
 
+        public static async Task<string> getDocuments(string accountID, string dbID, string collectionID, string parameter, string value)
+        {
+            string url = "https://{0}.documents.azure.com/dbs/{1}/colls/{2}/docs";
+            url = String.Format(url, accountID, dbID, collectionID);
+
+            string query= GenericQueryToJson(parameter, value);
+            StringContent body = GetStringContent(query);
+            HttpClient client = await GetClient("post", accountID, collectionID);
+
+            try
+            {
+                HttpResponseMessage result = await client.PostAsync(url, body);
+                return result.Content.ToString();
+            }
+            catch (Exception ex) { return ex.Message; }
+        }
+
         /// <summary>
         /// Async method that returns a Json string that contains the Documents
         /// </summary>
